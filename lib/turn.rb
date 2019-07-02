@@ -38,3 +38,4 @@ def turn(array)
     display_board
   end
 end
+end
