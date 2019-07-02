@@ -32,9 +32,11 @@ def turn(array)
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
-  until valid_move?(array,index) == true
+  if valid_move?(array,index) == true
     move(array, index, "X")
     display_board(array)
-    break
+  else
+    puts "This move is not correct."
+    turn(array)
   end
 end
