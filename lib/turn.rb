@@ -36,6 +36,11 @@ def turn(array)
     move(array, index, "X")
     display_board(array)
   else
-    puts "This move is not correct."
+    puts "This move is not correct. Please enter 1-9:"
+    input = gets.strip
+    index = input_to_index(input)
+    if valid_move?(array,index) == true
+    move(array, index, "X")
+    display_board(array)
   end
 end
