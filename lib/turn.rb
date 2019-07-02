@@ -36,7 +36,7 @@ def turn(array)
     move(array, index, "X")
     display_board
   else
-    until valid_movevalid_move?(array,index) == true
+    until valid_move?(array,index) == true
     turn(array)
   end
 end
