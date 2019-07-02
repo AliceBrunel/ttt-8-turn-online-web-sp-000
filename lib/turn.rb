@@ -37,6 +37,5 @@ def turn(array)
     display_board(array)
   else
     puts "This move is not correct."
-    turn(array)
   end
 end
