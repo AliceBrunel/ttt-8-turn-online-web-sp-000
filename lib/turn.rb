@@ -39,5 +39,4 @@ def turn(array)
     until valid_move == true
     turn(array)
   end
-  end
 end
