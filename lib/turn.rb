@@ -34,6 +34,6 @@ def turn(array)
   index = input_to_index(input)
   if valid_move?(array,index) == true
     move(array, index, "X")
-    display_board
+    display_board(array)
   end
 end
