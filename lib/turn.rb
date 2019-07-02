@@ -36,7 +36,7 @@ def turn(array)
     move(array, index, "X")
     display_board(array)
   else
-    puts "This move is not correct. Please enter 1-9:"
+    puts "This move is not correct."
     turn(array)
   end
 end
