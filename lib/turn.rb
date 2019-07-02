@@ -15,6 +15,11 @@ def position_taken?(array, index)
   array[index] != " "
 end
 
-def move(array, index, "X") {
-  
-}
+def input_to_index(input)
+  return input.to_i - 1
+end
+
+
+def move(array, index, value="X")
+  array[index] = value
+end
