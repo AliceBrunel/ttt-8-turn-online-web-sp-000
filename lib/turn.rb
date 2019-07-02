@@ -35,5 +35,6 @@ def turn(array)
   until valid_move?(array,index) == true
     move(array, index, "X")
     display_board(array)
+    break
   end
 end
